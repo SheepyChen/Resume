@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Gothic', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+    header{
+        
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 8vh;
+            background-color: #0A1931;
+            .logo{
+                font-size: 1.5rem;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                color: ivory;
+            }
+            .nav-links{
+                display: flex;
+                background-color: ivory;
+                justify-content: space-around;
+                width: 35%;
+                a{
+                    color: #000;
+                    letter-spacing: 3px;
+                    font-weight: bold;
+                    font-size: 1rem;
+                }
+            }
+            .burger {
+                display: none;
+                cursor: pointer;
+                div{
+                    width: 25px;
+                    height: 3px;
+                    background-color: rgb(255, 255, 255);
+                    margin: 5px;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        body{
+            overflow-x:hidden;
+        }
+        .navbar{
+            
+            .nav-links{
+            background-color: rgba(230, 247, 252, 0.5);
+            position: absolute;
+            right: 0;
+            height: 92vh;
+            top:8vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            transform: translateX(100%);
+            // transition: transform 0.2s ease;
+            li{
+            opacity: 0;
+            }
+        }
+        .nav-active{
+            transform: translateX(0%);
+            z-index: 100;
+        }
+        .burger{
+            display: block;
+            }
+        }
+    }
+    .intro{
+        text-shadow: black 0.1em 0.1em 0.1em;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        letter-spacing: 3px;
+        transform: translate(50%);
+    }
+    .hero{
+        width: 100%;
+        height: 200px;
+        background-color: #0A1931;
+    }
+    .emphasis{
+        color: #ffb703;
+        font-size: 1.25rem;
+    }
+    h1{
+        text-align: center;
+    }
+    #about{
+        background-color: #0A1931;
+        h1{
+            color: ivory;
+        }
+    }
+    .row{
+        
+        margin: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        table{
+            color: white;
+            border-collapse: collapse;
+            tr{
+                
+                td{
+                    border: none;
+                    padding-bottom: 1rem;
+                    &:hover{
+                        background-color: #000000;
+                    }
+                    
+                    
+                    p.center{
+                        font-size: 1rem;
+                        text-align: center;
+                        }
+                }       
+            .ex{
+                position: relative;
+                span{
+                    position: absolute;
+                    right: 0;
+                }
+            }            
+            }
+        }
+        .right{
+            background-color: #0A1931;
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            @media screen and (max-width: 540px){
+                position: relative;
+                right: auto;
+                top: auto;
+            }
+            .selfphoto{
+                position: absolute;
+                width: 20vw;
+                border-radius: 50%;
+                right: 50%;
+                top: 50%;
+                transform: translate(50%,-50%);
+                transition: all 0.3s ease;
+                object-fit: cover;
+            }
+            
+            .tag{
+                position: absolute;
+                top: 75%;
+                font-size: 1.2rem;
+                font-weight: 700;
+                
+            }
+        }
+    }
+    .projectrow{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 24px;
+        background-color: #0A1931;
+        color:ivory;
+        .project-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 30vw;
+                @media screen and (max-width: 768px){
+                    width: 40vw;
+                }
+                @media screen and (max-width: 540px){
+                    width: 60vw;
+                }
+                
+            }
+            .preview{
+                padding: 0 1rem;
+            }
+
+        }
+    }
+    
+    @keyframes navLinkFade{
+        from{opacity: 0;
+        transform: translateX(50px);
+        }
+        to{opacity: 1;
+            transform: translateX(0);
+    
+        }
+    }
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+    @media screen {
+        .col-lg-4{
+            width: 33.3333%;
+        }
+        .col-lg-8{
+            width: 66.6666%;
+        }
+        .col-lg-6{
+            width: 50%;
+        }
+        .col-lg-12{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 768px){
+            .col-md-4{
+                width: 33.3333%;
+            }
+            .col-md-8{
+                width: 66.6666%;
+            }
+            .col-md-6{
+                width: 50%;
+            }
+            .col-md-12{
+                width: 100%;
+            }   
+    }
+    @media screen and (max-width: 540px){
+            .col-sm-3{
+                width: 25%;
+            }
+            .col-sm-4{
+                width: 33.3333333%;
+            }
+            .col-sm-6{
+                width: 50%;
+            }
+            .col-sm-12{
+                width: 100%;
+            }
+    }
+    
+    
