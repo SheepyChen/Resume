@@ -39,10 +39,14 @@ header nav .nav-links {
 }
 
 header nav .nav-links a {
-  color: #000;
+  color: #686868;
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 1rem;
+}
+
+header nav .nav-links a:hover {
+  color: black;
 }
 
 header nav .burger {
@@ -113,12 +117,10 @@ header nav .burger div {
 }
 
 .emphasis {
-  color: #ffb703;
+  color: #000000;
   font-size: 1.25rem;
-}
-
-h1 {
   text-align: center;
+  font-weight: 700;
 }
 
 #about {
@@ -127,10 +129,13 @@ h1 {
 
 #about h1 {
   color: ivory;
+  margin-bottom: 24px;
+  margin-left: 32px;
 }
 
 .row {
-  margin: 32px;
+  margin: 0 50px;
+  background-color: aliceblue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,22 +144,17 @@ h1 {
 }
 
 .row table {
-  color: white;
+  color: #0A1931;
   border-collapse: collapse;
 }
 
 .row table tr td {
   border: none;
-  padding-bottom: 1rem;
+  padding: 1rem 1rem;
 }
 
 .row table tr td:hover {
-  background-color: #000000;
-}
-
-.row table tr td p.center {
-  font-size: 1rem;
-  text-align: center;
+  text-decoration: underline;
 }
 
 .row table tr .ex {
@@ -163,7 +163,7 @@ h1 {
 
 .row table tr .ex span {
   position: absolute;
-  right: 0;
+  right: 24px;
 }
 
 .row .right {
@@ -208,9 +208,17 @@ h1 {
   top: 75%;
   font-size: 1.2rem;
   font-weight: 700;
+  color: wheat;
 }
 
-.projectrow {
+#project h2 {
+  color: ivory;
+  padding-bottom: 24px;
+  padding-left: 40px;
+  background-color: #0A1931;
+}
+
+#project .projectrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,7 +229,7 @@ h1 {
   color: ivory;
 }
 
-.projectrow .project-item {
+#project .projectrow .project-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,26 +240,103 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 14px;
 }
 
-.projectrow .project-item img {
-  width: 30vw;
+#project .projectrow .project-item img {
+  width: 25vw;
+  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
-  .projectrow .project-item img {
+  #project .projectrow .project-item img {
     width: 40vw;
   }
 }
 
 @media screen and (max-width: 540px) {
-  .projectrow .project-item img {
+  #project .projectrow .project-item img {
     width: 60vw;
   }
 }
 
-.projectrow .project-item .preview {
-  padding: 0 1rem;
+#project .projectrow .project-item .preview {
+  padding: 0 3rem;
+}
+
+#project .projectrow .project-item .preview .title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#project .projectrow .project-item .preview .subtitle {
+  font-size: 0.9rem;
+}
+
+#project .projectrow .project-item .preview div {
+  margin-bottom: 6px;
+}
+
+#project .projectrow .project-item .preview .see-btn {
+  color: black;
+  padding: 4px 24px;
+  background-color: white;
+}
+
+#project .projectrow .project-item .preview .see-btn:hover {
+  background-color: aliceblue;
+}
+
+@media screen and (max-width: 540px) {
+  #project .projectrow .project-item .preview {
+    text-align: center;
+  }
+}
+
+#contact {
+  background-image: url(../pic/001.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0A1931;
+  color: ivory;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#contact i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 6px;
+  margin-right: 10px;
+}
+
+#contact i:hover {
+  color: #b9b8b8;
+}
+
+.copyright {
+  padding: 10px;
+  background-color: ivory;
+  text-align: center;
+  vertical-align: middle;
 }
 
 @-webkit-keyframes navLinkFade {

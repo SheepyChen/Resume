@@ -26,10 +26,13 @@
                 justify-content: space-around;
                 width: 35%;
                 a{
-                    color: #000;
+                    color: rgb(104, 104, 104);
                     letter-spacing: 3px;
                     font-weight: bold;
                     font-size: 1rem;
+                    &:hover{
+                        color: rgb(0, 0, 0);
+                    }
                 }
             }
             .burger {
@@ -90,46 +93,48 @@
         background-color: #0A1931;
     }
     .emphasis{
-        color: #ffb703;
+        color: #000000;
         font-size: 1.25rem;
-    }
-    h1{
         text-align: center;
+        font-weight: 700;
     }
+    
     #about{
         background-color: #0A1931;
         h1{
             color: ivory;
+            margin-bottom: 24px;
+            margin-left: 32px;
         }
     }
     .row{
         
-        margin: 32px;
+        margin: 0 50px ;
+        background-color: aliceblue;
         display: flex;
         flex-wrap: wrap;
         table{
-            color: white;
+            color: #0A1931;
             border-collapse: collapse;
             tr{
                 
                 td{
+                    
                     border: none;
-                    padding-bottom: 1rem;
+                    padding: 1rem 1rem;
+                    
                     &:hover{
-                        background-color: #000000;
+                        text-decoration: underline;
                     }
                     
                     
-                    p.center{
-                        font-size: 1rem;
-                        text-align: center;
-                        }
+                    
                 }       
             .ex{
                 position: relative;
                 span{
                     position: absolute;
-                    right: 0;
+                    right: 24px;
                 }
             }            
             }
@@ -163,9 +168,17 @@
                 top: 75%;
                 font-size: 1.2rem;
                 font-weight: 700;
+                color:wheat;
                 
             }
         }
+    }
+    #project{
+    h2{
+        color: ivory;
+        padding-bottom: 24px;
+        padding-left: 40px;
+        background-color: #0A1931;
     }
     .projectrow{
         display: flex;
@@ -177,8 +190,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-bottom: 14px;
             img{
-                width: 30vw;
+                width: 25vw;
+                height: 100%;
                 @media screen and (max-width: 768px){
                     width: 40vw;
                 }
@@ -188,12 +203,73 @@
                 
             }
             .preview{
-                padding: 0 1rem;
+                padding: 0 3rem;
+                .title{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+                .subtitle{
+                    font-size: 0.9rem;
+                }
+                div{
+                    margin-bottom: 6px;
+                }
+                .see-btn{
+                    color: black;
+                    padding: 4px 24px;
+                    
+                    background-color: rgb(255, 255, 255);
+                    &:hover{
+                        background-color: aliceblue;
+                    }
+                }
+                
+            }
+            @media screen and (max-width: 540px){
+                 .preview{
+                     text-align: center;
+                     
+                 }   
             }
 
         }
     }
-    
+}
+    #contact{
+        h2{
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        background-image: url(../pic/001.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #0A1931;
+        color: ivory;
+
+        i{
+            font-size: 1.5rem;
+            cursor: pointer;
+            margin-top: 6px;
+            margin-right: 10px;
+            &:hover{
+                color: rgb(185, 184, 184);
+            }
+        }
+
+    }
+    .copyright{
+        padding: 10px;
+        background-color: ivory;
+        text-align: center;
+        vertical-align: middle;
+        
+    }
     @keyframes navLinkFade{
         from{opacity: 0;
         transform: translateX(50px);
