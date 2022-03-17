@@ -6,6 +6,7 @@
   font-family: 'League Gothic', sans-serif;
   text-decoration: none;
   list-style: none;
+  letter-spacing: 1px;
 }
 
 header nav {
@@ -130,7 +131,7 @@ header nav .burger div {
 #about h1 {
   color: ivory;
   margin-bottom: 24px;
-  margin-left: 32px;
+  margin-left: 50px;
 }
 
 .row {
@@ -197,10 +198,18 @@ header nav .burger div {
   top: 50%;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   -o-object-fit: cover;
      object-fit: cover;
+  overflow: hidden;
+}
+
+.row .right img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  right: 18%;
+  top: 34%;
 }
 
 .row .right .tag {
@@ -211,10 +220,10 @@ header nav .burger div {
   color: wheat;
 }
 
-#project h2 {
+#project h1 {
   color: ivory;
   padding-bottom: 24px;
-  padding-left: 40px;
+  padding-left: 50px;
   background-color: #0A1931;
 }
 
@@ -319,6 +328,14 @@ header nav .burger div {
 #contact h2 {
   font-size: 2rem;
   font-weight: 700;
+}
+
+#contact .contact-email {
+  font-size: 1.2rem;
+}
+
+#contact .contact-email:hover {
+  color: #b9b8b8;
 }
 
 #contact i {

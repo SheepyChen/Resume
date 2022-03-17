@@ -5,6 +5,7 @@
     font-family: 'League Gothic', sans-serif;
     text-decoration: none;
     list-style: none;
+    letter-spacing: 1px;
 }
     header{
         
@@ -104,7 +105,7 @@
         h1{
             color: ivory;
             margin-bottom: 24px;
-            margin-left: 32px;
+            margin-left: 50px;
         }
     }
     .row{
@@ -159,8 +160,14 @@
                 right: 50%;
                 top: 50%;
                 transform: translate(50%,-50%);
-                transition: all 0.3s ease;
+                transition: all 0.5s ease;
                 object-fit: cover;
+                overflow: hidden;
+                }
+                img:hover{
+                    transform: scale(1.1);
+                    right: 18%;
+                    top: 34%;
             }
             
             .tag{
@@ -174,10 +181,10 @@
         }
     }
     #project{
-    h2{
+    h1{
         color: ivory;
         padding-bottom: 24px;
-        padding-left: 40px;
+        padding-left: 50px;
         background-color: #0A1931;
     }
     .projectrow{
@@ -251,6 +258,13 @@
         justify-content: center;
         background-color: #0A1931;
         color: ivory;
+        .contact-email{
+            font-size: 1.2rem;
+            &:hover{
+                color: rgb(185, 184, 184);
+            }
+            
+        }
 
         i{
             font-size: 1.5rem;
