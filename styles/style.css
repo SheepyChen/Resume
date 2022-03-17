@@ -69,7 +69,7 @@ header nav .burger div {
     overflow-x: hidden;
   }
   .navbar .nav-links {
-    background-color: rgba(230, 247, 252, 0.5);
+    background-color: rgba(230, 247, 252, 0.9);
     position: absolute;
     right: 0;
     height: 92vh;
@@ -85,6 +85,7 @@ header nav .burger div {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+    font-weight: 600;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
   }
@@ -182,19 +183,11 @@ header nav .burger div {
   overflow: hidden;
 }
 
-@media screen and (max-width: 540px) {
-  .row .right {
-    position: relative;
-    right: auto;
-    top: auto;
-  }
-}
-
 .row .right .selfphoto {
   position: absolute;
   width: 20vw;
   border-radius: 50%;
-  right: 50%;
+  right: 45%;
   top: 50%;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
@@ -203,13 +196,6 @@ header nav .burger div {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
-}
-
-.row .right img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  right: 18%;
-  top: 34%;
 }
 
 .row .right .tag {
@@ -255,6 +241,8 @@ header nav .burger div {
 #project .projectrow .project-item img {
   width: 25vw;
   height: 100%;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 @media screen and (max-width: 768px) {
@@ -267,6 +255,11 @@ header nav .burger div {
   #project .projectrow .project-item img {
     width: 60vw;
   }
+}
+
+#project .projectrow .project-item img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 #project .projectrow .project-item .preview {
@@ -286,10 +279,14 @@ header nav .burger div {
   margin-bottom: 6px;
 }
 
+#project .projectrow .project-item .preview div:hover {
+  color: aliceblue;
+}
+
 #project .projectrow .project-item .preview .see-btn {
   color: black;
   padding: 4px 24px;
-  background-color: white;
+  background-color: ivory;
 }
 
 #project .projectrow .project-item .preview .see-btn:hover {
@@ -339,6 +336,7 @@ header nav .burger div {
 }
 
 #contact i {
+  color: ivory;
   font-size: 1.5rem;
   cursor: pointer;
   margin-top: 6px;
