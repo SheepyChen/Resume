@@ -51,32 +51,33 @@ header {
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
-  }
-  .navbar {
-    .nav-links {
-      background-color: rgba(230, 247, 252, 0.9);
-      position: absolute;
 
-      right: 0;
-      height: 92vh;
-      top: 8vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      font-weight: 600;
-      transform: translateX(100%);
-      // transition: transform 0.2s ease;
-      li {
-        opacity: 0;
+    .navbar {
+      .nav-links {
+        background-color: rgba(230, 247, 252, 0.9);
+        position: absolute;
+
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-weight: 600;
+        transform: translateX(100%);
+        // transition: transform 0.2s ease;
+        li {
+          opacity: 0;
+        }
       }
-    }
-    .nav-active {
-      transform: translateX(0%);
-      z-index: 100;
-    }
-    .burger {
-      display: block;
+      .nav-active {
+        transform: translateX(0%);
+        z-index: 30;
+      }
+      .burger {
+        display: block;
+      }
     }
   }
 }
@@ -170,7 +171,14 @@ header {
     padding-bottom: 24px;
     padding-left: 50px;
     background-color: #0a1931;
+    span {
+      font-size: 1rem;
+      color: ivory;
+      padding-bottom: 24px;
+      background-color: #0a1931;
+    }
   }
+
   .projectrow {
     display: flex;
     flex-wrap: wrap;

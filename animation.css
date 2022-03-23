@@ -1,39 +1,40 @@
 /*animation stars*/
 .night {
-    background: #0A1931;
-    width: 100vw;
-    height: 100vh;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-  }
-  .moon {
-    position: absolute;
-    top: 60px;
-    left: 60px;
-    font-size: 56px;
-  }
-  .star {
-    position: absolute;
-    bottom: -30px;
-    font-size: 24px;
-  }
-  .disappear{
-    transition: all 1s ease; opacity: 0; pointer-events:none;
-  }
-  div .cloud{
-    position:absolute;
-    left:0;
-    animation-name:cloudflow;
-    animation-duration:10s;
-    transition:all 3s;
+  background: #0a1931;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+  overflow-x: hidden;
 }
-@keyframes cloudflow{
-    from{
-        left:0;
-    }
-    to{
-        left:100%;
-    }
-    
+.moon {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  font-size: 56px;
+}
+.star {
+  position: absolute;
+  bottom: -30px;
+  font-size: 24px;
+}
+.disappear {
+  transition: all 1s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+div .cloud {
+  position: absolute;
+  left: 0;
+  animation-name: cloudflow;
+  animation-duration: 10s;
+  transition: all 3s;
+}
+@keyframes cloudflow {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
 }

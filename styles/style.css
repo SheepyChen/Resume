@@ -68,7 +68,7 @@ header nav .burger div {
   body {
     overflow-x: hidden;
   }
-  .navbar .nav-links {
+  body .navbar .nav-links {
     background-color: rgba(230, 247, 252, 0.9);
     position: absolute;
     right: 0;
@@ -89,15 +89,15 @@ header nav .burger div {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
   }
-  .navbar .nav-links li {
+  body .navbar .nav-links li {
     opacity: 0;
   }
-  .navbar .nav-active {
+  body .navbar .nav-active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    z-index: 100;
+    z-index: 30;
   }
-  .navbar .burger {
+  body .navbar .burger {
     display: block;
   }
 }
@@ -211,6 +211,13 @@ header nav .burger div {
   color: ivory;
   padding-bottom: 24px;
   padding-left: 50px;
+  background-color: #0a1931;
+}
+
+#project h1 span {
+  font-size: 1rem;
+  color: ivory;
+  padding-bottom: 24px;
   background-color: #0a1931;
 }
 
