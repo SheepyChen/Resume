@@ -9,7 +9,11 @@
   letter-spacing: 1px;
 }
 
-header nav {
+body {
+  overflow-x: hidden;
+}
+
+body header .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,14 +26,14 @@ header nav {
   background-color: #0a1931;
 }
 
-header nav .logo {
+body header .navbar .logo {
   font-size: 1.5rem;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: ivory;
 }
 
-header nav .nav-links {
+body header .navbar .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,23 +43,23 @@ header nav .nav-links {
   width: 35%;
 }
 
-header nav .nav-links a {
+body header .navbar .nav-links a {
   color: #686868;
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 1rem;
 }
 
-header nav .nav-links a:hover {
+body header .navbar .nav-links a:hover {
   color: black;
 }
 
-header nav .burger {
+body header .navbar .burger {
   display: none;
   cursor: pointer;
 }
 
-header nav .burger div {
+body header .navbar .burger div {
   width: 25px;
   height: 3px;
   background-color: white;
@@ -65,11 +69,7 @@ header nav .burger div {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-  body .navbar .nav-links {
-    background-color: rgba(230, 247, 252, 0.9);
+  body header .navbar .nav-links {
     position: absolute;
     right: 0;
     height: 92vh;
@@ -86,23 +86,22 @@ header nav .burger div {
             align-items: center;
     width: 100%;
     font-weight: 600;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
   }
-  body .navbar .nav-links li {
+  body header .navbar .nav-links li {
     opacity: 0;
   }
-  body .navbar .nav-active {
+  body header .navbar .nav-active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
     z-index: 30;
+    background-color: rgba(230, 247, 252, 0.9);
   }
-  body .navbar .burger {
+  body header .navbar .burger {
     display: block;
   }
 }
 
-.intro {
+body .intro {
   text-shadow: black 0.1em 0.1em 0.1em;
   position: absolute;
   top: 50%;
@@ -112,30 +111,30 @@ header nav .burger div {
           transform: translate(50%);
 }
 
-.hero {
+body .hero {
   width: 100%;
   height: 200px;
   background-color: #0a1931;
 }
 
-.emphasis {
+body .emphasis {
   color: #000000;
   font-size: 1.25rem;
   text-align: center;
   font-weight: 700;
 }
 
-#about {
+body #about {
   background-color: #0a1931;
 }
 
-#about h1 {
+body #about h1 {
   color: ivory;
   margin-bottom: 24px;
   margin-left: 50px;
 }
 
-.row {
+body .row {
   margin: 0 50px;
   background-color: aliceblue;
   display: -webkit-box;
@@ -145,31 +144,31 @@ header nav .burger div {
       flex-wrap: wrap;
 }
 
-.row table {
+body .row table {
   color: #0a1931;
   border-collapse: collapse;
 }
 
-.row table tr td {
+body .row table tr td {
   border: none;
   padding: 1rem 1rem;
 }
 
-.row table tr td:hover {
+body .row table tr td:hover {
   text-decoration: underline;
 }
 
-.row table tr .ex {
+body .row table tr .ex {
   position: relative;
 }
 
-.row table tr .ex span {
+body .row table tr .ex span {
   position: absolute;
   right: 24px;
   top: -8px;
 }
 
-.row .right {
+body .row .right {
   background-color: #0a1931;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,7 +183,7 @@ header nav .burger div {
   overflow: hidden;
 }
 
-.row .right .selfphoto {
+body .row .right .selfphoto {
   position: absolute;
   width: 20vw;
   border-radius: 50%;
@@ -199,7 +198,7 @@ header nav .burger div {
   overflow: hidden;
 }
 
-.row .right .tag {
+body .row .right .tag {
   position: absolute;
   top: 75%;
   font-size: 1.2rem;
@@ -207,21 +206,21 @@ header nav .burger div {
   color: wheat;
 }
 
-#project h1 {
+body #project h1 {
   color: ivory;
   padding-bottom: 24px;
   padding-left: 50px;
   background-color: #0a1931;
 }
 
-#project h1 span {
+body #project h1 span {
   font-size: 1rem;
   color: ivory;
   padding-bottom: 24px;
   background-color: #0a1931;
 }
 
-#project .projectrow {
+body #project .projectrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,7 +231,7 @@ header nav .burger div {
   color: ivory;
 }
 
-#project .projectrow .project-item {
+body #project .projectrow .project-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,7 +245,7 @@ header nav .burger div {
   margin-bottom: 14px;
 }
 
-#project .projectrow .project-item img {
+body #project .projectrow .project-item img {
   width: 25vw;
   height: 100%;
   -webkit-transition: all 0.3s ease-in;
@@ -254,60 +253,60 @@ header nav .burger div {
 }
 
 @media screen and (max-width: 768px) {
-  #project .projectrow .project-item img {
+  body #project .projectrow .project-item img {
     width: 40vw;
   }
 }
 
 @media screen and (max-width: 540px) {
-  #project .projectrow .project-item img {
+  body #project .projectrow .project-item img {
     width: 60vw;
   }
 }
 
-#project .projectrow .project-item img:hover {
+body #project .projectrow .project-item img:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-#project .projectrow .project-item .preview {
+body #project .projectrow .project-item .preview {
   padding: 0 3rem;
 }
 
-#project .projectrow .project-item .preview .title {
+body #project .projectrow .project-item .preview .title {
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-#project .projectrow .project-item .preview .subtitle {
+body #project .projectrow .project-item .preview .subtitle {
   font-size: 0.9rem;
 }
 
-#project .projectrow .project-item .preview div {
+body #project .projectrow .project-item .preview div {
   margin-bottom: 6px;
 }
 
-#project .projectrow .project-item .preview div:hover {
+body #project .projectrow .project-item .preview div:hover {
   color: aliceblue;
 }
 
-#project .projectrow .project-item .preview .see-btn {
+body #project .projectrow .project-item .preview .see-btn {
   color: black;
   padding: 4px 24px;
   background-color: ivory;
 }
 
-#project .projectrow .project-item .preview .see-btn:hover {
+body #project .projectrow .project-item .preview .see-btn:hover {
   background-color: aliceblue;
 }
 
 @media screen and (max-width: 540px) {
-  #project .projectrow .project-item .preview {
+  body #project .projectrow .project-item .preview {
     text-align: center;
   }
 }
 
-#contact {
+body #contact {
   background-image: url(../pic/001.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -330,20 +329,20 @@ header nav .burger div {
   color: ivory;
 }
 
-#contact h2 {
+body #contact h2 {
   font-size: 2rem;
   font-weight: 700;
 }
 
-#contact .contact-email {
+body #contact .contact-email {
   font-size: 1.2rem;
 }
 
-#contact .contact-email:hover {
+body #contact .contact-email:hover {
   color: #b9b8b8;
 }
 
-#contact i {
+body #contact i {
   color: ivory;
   font-size: 1.5rem;
   cursor: pointer;
@@ -351,11 +350,11 @@ header nav .burger div {
   margin-right: 10px;
 }
 
-#contact i:hover {
+body #contact i:hover {
   color: #b9b8b8;
 }
 
-.copyright {
+body .copyright {
   padding: 10px;
   background-color: ivory;
   text-align: center;
