@@ -119,7 +119,7 @@ body .hero {
 
 body .emphasis {
   color: #000000;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: center;
   font-weight: 700;
 }
@@ -155,11 +155,20 @@ body .row table tr td {
 }
 
 body .row table tr td:hover {
-  text-decoration: underline;
+  color: #3776da;
+}
+
+body .row table tr td .skill {
+  font-size: 1.1rem;
 }
 
 body .row table tr .ex {
   position: relative;
+}
+
+body .row table tr .ex .job {
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 body .row table tr .ex span {
@@ -203,7 +212,11 @@ body .row .right .tag {
   top: 75%;
   font-size: 1.2rem;
   font-weight: 700;
-  color: wheat;
+  color: #f9f9f9;
+}
+
+body .row .right .tag:hover {
+  color: #ecd397;
 }
 
 body #project h1 {
@@ -213,11 +226,19 @@ body #project h1 {
   background-color: #0a1931;
 }
 
+body #project h1:hover {
+  color: #ecd397;
+}
+
 body #project h1 span {
   font-size: 1rem;
   color: ivory;
   padding-bottom: 24px;
   background-color: #0a1931;
+}
+
+body #project h1:hover {
+  color: #ecd397;
 }
 
 body #project .projectrow {
@@ -265,8 +286,7 @@ body #project .projectrow .project-item img {
 }
 
 body #project .projectrow .project-item img:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  color: #ecd397;
 }
 
 body #project .projectrow .project-item .preview {
@@ -282,12 +302,16 @@ body #project .projectrow .project-item .preview .subtitle {
   font-size: 0.9rem;
 }
 
+body #project .projectrow .project-item .preview .para {
+  margin-bottom: 18px;
+}
+
 body #project .projectrow .project-item .preview div {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 body #project .projectrow .project-item .preview div:hover {
-  color: aliceblue;
+  color: #ecd397;
 }
 
 body #project .projectrow .project-item .preview .see-btn {
@@ -297,7 +321,8 @@ body #project .projectrow .project-item .preview .see-btn {
 }
 
 body #project .projectrow .project-item .preview .see-btn:hover {
-  background-color: aliceblue;
+  background-color: #ecd397;
+  padding: 5px 25px;
 }
 
 @media screen and (max-width: 540px) {
@@ -339,7 +364,7 @@ body #contact .contact-email {
 }
 
 body #contact .contact-email:hover {
-  color: #b9b8b8;
+  color: #636363;
 }
 
 body #contact i {
