@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "League Gothic", sans-serif;
+  font-family: serif;
   text-decoration: none;
   list-style: none;
   letter-spacing: 1px;
@@ -219,29 +219,29 @@ body .row .right .tag:hover {
   color: #ecd397;
 }
 
-body #project h1 {
+body #project1 h1 {
   color: ivory;
   padding-bottom: 24px;
   padding-left: 50px;
   background-color: #0a1931;
 }
 
-body #project h1:hover {
+body #project1 h1:hover {
   color: #ecd397;
 }
 
-body #project h1 span {
+body #project1 h1 span {
   font-size: 1rem;
   color: ivory;
   padding-bottom: 24px;
   background-color: #0a1931;
 }
 
-body #project h1:hover {
+body #project1 h1:hover {
   color: #ecd397;
 }
 
-body #project .projectrow {
+body #project1 .projectrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,7 +252,7 @@ body #project .projectrow {
   color: ivory;
 }
 
-body #project .projectrow .project-item {
+body #project1 .projectrow .project-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,7 +266,7 @@ body #project .projectrow .project-item {
   margin-bottom: 14px;
 }
 
-body #project .projectrow .project-item img {
+body #project1 .projectrow .project-item img {
   width: 25vw;
   height: 100%;
   -webkit-transition: all 0.3s ease-in;
@@ -274,59 +274,175 @@ body #project .projectrow .project-item img {
 }
 
 @media screen and (max-width: 768px) {
-  body #project .projectrow .project-item img {
+  body #project1 .projectrow .project-item img {
     width: 40vw;
   }
 }
 
 @media screen and (max-width: 540px) {
-  body #project .projectrow .project-item img {
+  body #project1 .projectrow .project-item img {
     width: 60vw;
   }
 }
 
-body #project .projectrow .project-item img:hover {
+body #project1 .projectrow .project-item img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
   color: #ecd397;
 }
 
-body #project .projectrow .project-item .preview {
+body #project1 .projectrow .project-item .preview {
   padding: 0 3rem;
 }
 
-body #project .projectrow .project-item .preview .title {
+body #project1 .projectrow .project-item .preview .title {
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-body #project .projectrow .project-item .preview .subtitle {
+body #project1 .projectrow .project-item .preview .subtitle {
   font-size: 0.9rem;
 }
 
-body #project .projectrow .project-item .preview .para {
+body #project1 .projectrow .project-item .preview .para {
   margin-bottom: 18px;
 }
 
-body #project .projectrow .project-item .preview div {
+body #project1 .projectrow .project-item .preview div {
   margin-bottom: 8px;
 }
 
-body #project .projectrow .project-item .preview div:hover {
+body #project1 .projectrow .project-item .preview div:hover {
   color: #ecd397;
 }
 
-body #project .projectrow .project-item .preview .see-btn {
+body #project1 .projectrow .project-item .preview .see-btn {
   color: black;
   padding: 4px 24px;
   background-color: ivory;
 }
 
-body #project .projectrow .project-item .preview .see-btn:hover {
+body #project1 .projectrow .project-item .preview .see-btn:hover {
   background-color: #ecd397;
   padding: 5px 25px;
 }
 
 @media screen and (max-width: 540px) {
-  body #project .projectrow .project-item .preview {
+  body #project1 .projectrow .project-item .preview {
+    text-align: center;
+  }
+}
+
+body #project2 h1 {
+  color: ivory;
+  padding-bottom: 24px;
+  padding-left: 50px;
+  background-color: #0a1931;
+}
+
+body #project2 h1:hover {
+  color: #ecd397;
+}
+
+body #project2 h1 span {
+  font-size: 1rem;
+  color: ivory;
+  padding-bottom: 24px;
+  background-color: #0a1931;
+}
+
+body #project2 h1:hover {
+  color: #ecd397;
+}
+
+body #project2 .projectrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 24px;
+  background-color: #0a1931;
+  color: ivory;
+}
+
+body #project2 .projectrow .project-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 14px;
+}
+
+body #project2 .projectrow .project-item img {
+  width: 25vw;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  body #project2 .projectrow .project-item img {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  body #project2 .projectrow .project-item img {
+    width: 60vw;
+  }
+}
+
+body #project2 .projectrow .project-item img:hover {
+  color: #ecd397;
+}
+
+body #project2 .projectrow .project-item .preview {
+  padding: 0 3rem;
+}
+
+body #project2 .projectrow .project-item .preview .title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+body #project2 .projectrow .project-item .preview .subtitle {
+  font-size: 0.9rem;
+}
+
+body #project2 .projectrow .project-item .preview .para {
+  margin-bottom: 18px;
+}
+
+body #project2 .projectrow .project-item .preview div {
+  margin-bottom: 8px;
+}
+
+body #project2 .projectrow .project-item .preview div:hover {
+  color: #ecd397;
+}
+
+body #project2 .projectrow .project-item .preview .see-btn {
+  color: black;
+  padding: 4px 24px;
+  background-color: ivory;
+}
+
+body #project2 .projectrow .project-item .preview .see-btn:hover {
+  background-color: #ecd397;
+  padding: 5px 25px;
+}
+
+@media screen and (max-width: 540px) {
+  body #project2 .projectrow .project-item .preview {
     text-align: center;
   }
 }
